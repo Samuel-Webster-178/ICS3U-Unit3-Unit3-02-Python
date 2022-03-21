@@ -5,4 +5,4 @@
 # This module contains constants
 
 
-TAU = 6.28
+CHOSEN_NUMBER = 7

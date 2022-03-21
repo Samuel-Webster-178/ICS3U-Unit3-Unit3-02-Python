@@ -10,16 +10,17 @@ import constants
 
 
 def main():
-    # I calculate circumference
+    # I check if the user guessed correctly
 
     # input
-    radius = int(input("Enter radius of the circle in mm: "))
+    guess = int(input("Guess a number between 0-9: "))
 
-    # process
-    circumference = constants.TAU * radius
+    # process&output
+    if constants.CHOSEN_NUMBER == guess:
+        print("You got it!")
+    if constants.CHOSEN_NUMBER != guess:
+        print("Maybe next time!")
 
-    # output
-    print("Circumference is {} mm.".format(circumference))
     print("\nDone.")
 
 
